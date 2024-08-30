@@ -1,0 +1,529 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+
+.flight-search {
+  background-image: no-repeat center bottom;
+  height: 392px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.38);
+  width: 100vw;
+  background: url("../src/images/Main.jpg");
+
+  @include for-wide-middle {
+    background-size: cover;
+  }
+  @include for-narrow-middle {
+    height: 372px;
+  }
+  @include for-mobile {
+    height: 307px;
+    width: calc(100vw - 20px);
+    padding: 0 10px;
+  }
+
+  &__title {
+    margin: 0;
+    font:
+      70px "Open Sans",
+      sans-serif;
+    color: $color-white;
+    line-height: 80px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+
+    @include for-narrow-middle {
+      font:
+        60px "Open Sans",
+        sans-serif;
+    }
+    @include for-mobile {
+      font:
+        35px "Open Sans",
+        sans-serif;
+      padding-top: 20px;
+      line-height: 40px;
+    }
+  }
+
+  &__form {
+    height: 80px;
+    width: 740px;
+    background-color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    border-radius: 0 80px 0 0;
+    margin-top: 18px;
+
+    @include for-wide-middle {
+      width: 620px;
+    }
+    @include for-narrow-middle {
+      height: 60px;
+      width: 640px;
+    }
+    @include for-mobile {
+      height: 50px;
+      border-radius: 0;
+      width: calc(100vw - 30px);
+    }
+
+    &_input {
+      height: 80px;
+      width: 468px;
+      padding: 0;
+      margin: 0;
+      font-size: 24px;
+      border: none;
+      flex: 1;
+
+      @include for-narrow-middle {
+        height: 60px;
+        width: 398px;
+        font-size: 18px;
+      }
+      @include for-mobile {
+        height: 50px;
+        font-size: 18px;
+      }
+      &:focus {
+        outline: none;
+      }
+      @include for-wide-middle {
+        width: 348px;
+      }
+    }
+
+    &_submit-btn {
+      width: 200px;
+      height: 80px;
+      background-color: $color-blue;
+      color: $color-white;
+      font:
+        26px "Open Sans",
+        sans-serif;
+      border: none;
+      margin: 0;
+      padding: 0 20px;
+      border-radius: 0 80px 0 0;
+      transition: 0.3s ease-in-out;
+      font-weight: 700;
+      text-align: left;
+
+      @include for-narrow-middle {
+        height: 60px;
+        width: 170px;
+        font-size: 20px;
+      }
+      @include for-mobile {
+        display: none;
+      }
+
+      &:hover {
+        border-radius: 0 40px 0 0;
+      }
+    }
+
+    &_icon-holder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_icon {
+      width: 32px;
+      height: 31px;
+      color: #fefefe;
+      padding: 0 20px;
+
+      @include for-mobile {
+        height: 20px;
+        padding: 0 5px;
+      }
+    }
+  }
+
+  &__buttons {
+    width: 740px;
+    display: flex;
+    justify-content: space-between;
+
+    @include for-wide-middle {
+      width: 620px;
+    }
+    @include for-narrow-middle {
+      width: 640px;
+    }
+    @include for-mobile {
+      flex-direction: column;
+      width: calc(100vw - 30px);
+      margin: 0 20px;
+    }
+  }
+
+  &__btn {
+    width: 340px;
+    height: 60px;
+    background-color: $color-white;
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+    border: none;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    &:last-child {
+      justify-content: end;
+    }
+
+    @include for-wide-middle {
+      width: 270px;
+    }
+    @include for-narrow-middle {
+      width: 270px;
+    }
+    @include for-mobile {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    &_current {
+      background-color: $color-blue;
+    }
+
+    &_current .flight-search__btn_text {
+      color: $color-white;
+    }
+    &_current .flight-search__btn_icon {
+      filter: grayscale(100%) invert(100%) brightness(1000%) contrast(100%);
+    }
+
+    &_all-departures {
+      border-radius: 10px 50px 10px 10px;
+
+      @include for-desktop {
+        margin-right: 60px;
+      }
+      @include for-mobile {
+        margin-right: 20px;
+        padding: 0;
+      }
+
+      &:hover {
+        border-radius: 10px 25px 10px 10px;
+        background-color: $color-blue;
+      }
+
+      &:hover .flight-search__btn_text {
+        color: $color-white;
+      }
+      &:hover .flight-search__btn_icon {
+        filter: grayscale(100%) invert(100%) brightness(1000%) contrast(100%);
+      }
+    }
+
+    &_all-arrivals {
+      border-radius: 50px 10px 10px 10px;
+      margin-bottom: 60px;
+
+      @include for-mobile {
+        margin-bottom: 30px;
+        padding: 0;
+      }
+
+      &:hover {
+        border-radius: 25px 10px 10px 10px;
+        background-color: $color-blue;
+      }
+
+      &:hover .flight-search__btn_text {
+        color: $color-white;
+      }
+      &:hover .flight-search__btn_icon {
+        filter: grayscale(100%) invert(100%) brightness(1000%) contrast(100%);
+      }
+    }
+
+    &_text {
+      font:
+        20px "Open Sans",
+        sans-serif;
+      color: $color-blue;
+      font-weight: 500;
+      text-decoration: none;
+
+      @include for-wide-middle {
+        font:
+          16px "Open Sans",
+          sans-serif;
+      }
+      @include for-narrow-middle {
+        font:
+          16px "Open Sans",
+          sans-serif;
+      }
+    }
+
+    &_icon {
+      width: 40px;
+      height: 28px;
+      padding: 0 15px;
+    }
+  }
+}
+
+.submit-btn {
+  &__text {
+    color: $color-white;
+    font:
+      26px "Open Sans",
+      sans-serif;
+    font-weight: 700;
+    text-align: left;
+    text-decoration: none;
+
+    @include for-narrow-middle {
+      font-size: 20px;
+    }
+  }
+}
+
+.board {
+  &__content {
+    background-color: white;
+    overflow: hidden;
+  }
+}
+
+.filter {
+  min-height: 140px;
+
+  &__buttons-wrapper {
+    position: relative;
+  }
+
+  &__button {
+    position: absolute;
+    top: 0;
+    width: 55%;
+    height: 60px;
+    font:
+      600 24px/60px "Open Sans",
+      sans-serif;
+    text-align: end;
+    color: #fff;
+    background-color: #73d2f0;
+    border: none;
+    border-radius: 0 60px 0 0;
+    transition: 0.3s ease-in-out;
+    padding: 0 135px 0 0;
+    z-index: 5;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: 285px;
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: no-repeat center;
+      background-size: contain;
+      filter: brightness(500%);
+    }
+
+    &:hover {
+      background-color: #1eb7ee;
+    }
+
+    &:last-child {
+      right: 0;
+      text-align: start;
+      border-radius: 60px 0 0 0;
+      padding: 0 0 0 180px;
+
+      &::before {
+        left: 130px;
+        transform: rotate(90deg);
+      }
+    }
+
+    &_current {
+      background-color: #fff;
+      color: #1eb7ee;
+      z-index: 6;
+
+      &::before {
+        filter: brightness(110%);
+      }
+
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
+
+  &__date-wrapper {
+    display: flex;
+    width: 1200px;
+    height: 140px;
+    padding: 85px 20px 0;
+  }
+
+  &__date-input-label {
+    margin-right: 30px;
+    p {
+      font-size: 12px;
+      font-weight: 700;
+      text-align: center;
+      color: #1eb7ee;
+    }
+  }
+
+  &__date-input {
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #1eb7ee;
+    background-repeat: no-repeat;
+    background-position: 44% 47%;
+    background-size: 120px 120px;
+    background-image: url("../src/images/CalendarIcon.svg");
+
+    &::-webkit-calendar-picker-indicator {
+      opacity: 0;
+      cursor: pointer;
+    }
+  }
+
+  &__date-buttons {
+    display: flex;
+    width: 300px;
+    height: 100%;
+  }
+
+  &__date-button {
+    width: 100px;
+    height: 75px;
+    text-align: center;
+    cursor: pointer;
+    color: #b8b9b9;
+    border-bottom: 3px solid #d0d0d0;
+    transition: 0.3s ease-in-out;
+
+    & p:first-child {
+      font-size: 12px;
+      margin-bottom: 12px;
+    }
+
+    & p:last-child {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    &_current {
+      color: #1eb7ee;
+      border-bottom: 3px solid #1eb7ee;
+    }
+  }
+}
+
+.airport-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.airport-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  padding: 16px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #e9ecef;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  &__logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: center;
+  }
+
+  &__name {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__info p {
+    margin: 4px 16px 4px 0;
+    font-size: 0.9rem;
+    color: #333;
+  }
+
+  &__info p:last-child {
+    margin-right: 0;
+  }
+
+  &__code {
+    font-style: italic;
+    color: #888;
+  }
+
+  &__date {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  &__terminal {
+    font-weight: bold;
+    color: #1976d2;
+  }
+
+  &__status {
+    font-weight: bold;
+    color: #4caf50;
+  }
+
+  &__type {
+    font-size: 0.8rem;
+    color: #666;
+  }
+}
+
+.no-flights {
+  font-size: 24px;
+  color: $color-blue;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
