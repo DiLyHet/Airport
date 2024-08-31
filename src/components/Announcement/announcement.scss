@@ -850,7 +850,7 @@
 
     &_parking {
       border-radius: 0 0 150px 0;
-      background: url("../src/images/Parking.jpg");
+      background: url("/publlic/images/Parking.jpg");
 
       @include for-narrow-middle {
         border-radius: 0 0 80px 0;
@@ -863,7 +863,7 @@
 
     &_express-line {
       border-radius: 0 0 0 150px;
-      background: url("../src/images/ExpressLine.jpg");
+      background: url("/publlic/images/ExpressLine.jpg");
 
       @include for-narrow-middle {
         border-radius: 0 0 0 80px;
@@ -876,7 +876,7 @@
 
     &_airlines-destinations {
       border-radius: 0 0 150px 0;
-      background: url("../src/images/AirlinesDestinations.jpg");
+      background: url("/publlic/images/AirlinesDestinations.jpg");
 
       @include for-narrow-middle {
         border-radius: 0 0 80px 0;
@@ -889,7 +889,7 @@
 
     &_vip-terminal {
       border-radius: 0 0 0 150px;
-      background: url("../src/images/VipTerminal.jpg");
+      background: url("/publlic/images/VipTerminal.jpg");
 
       @include for-narrow-middle {
         border-radius: 0 0 0 80px;
@@ -986,7 +986,7 @@
 
     &_how-to-get {
       border-radius: 0 200px 0 0;
-      background: url("../src/images/HowToGet.jpg");
+      background: url("/publlic/images/HowToGet.jpg");
 
       &:hover {
         border-radius: 0 150px 0 0;
@@ -1030,7 +1030,7 @@
 
     &_buy-tickets {
       border-radius: 200px 0 0 0;
-      background: url("../src/images/BuyTickets.jpg");
+      background: url("/publlic/images/BuyTickets.jpg");
 
       &:hover {
         border-radius: 150px 0 0 0;
@@ -1175,7 +1175,7 @@
 
     &_services {
       border-radius: 0 200px 0 0;
-      background: url("../src/images/Services.jpg");
+      background: url("/publlic/images/Services.jpg");
 
       &:hover {
         border-radius: 0 150px 0 0;
@@ -1219,7 +1219,7 @@
 
     &_covid-testing {
       border-radius: 200px 0 0 0;
-      background: url("../src/images/CovidTesting.jpeg");
+      background: url("/publlic/images/CovidTesting.jpeg");
 
       &:hover {
         border-radius: 150px 0 0 0;
@@ -1365,7 +1365,7 @@
 
     &_mastercard-fastline {
       border-radius: 0 200px 0 0;
-      background: url("../src/images/MastercardFastline.jpg");
+      background: url("/publlic/images/MastercardFastline.jpg");
 
       &:hover {
         border-radius: 0 150px 0 0;
@@ -1409,7 +1409,7 @@
 
     &_information {
       border-radius: 200px 0 0 0;
-      background: url("../src/images/Information.jpg");
+      background: url("/publlic/images/Information.jpg");
 
       &:hover {
         border-radius: 150px 0 0 0;

@@ -90,7 +90,7 @@ const Footer: React.FC = () => {
               </span>
               <img
                 className="footer__dev-info_uig-icon"
-                src="../src/images/WhiteLogo.png"
+                src="/images/WhiteLogo.png"
                 alt="logo"
               />
             </div>

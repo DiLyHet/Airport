@@ -11,7 +11,7 @@
   justify-content: space-between;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.38);
   width: 100vw;
-  background: url("../src/images/Main.jpg");
+  background: url("/public/images/Main.jpg");
 
   @include for-wide-middle {
     background-size: cover;
@@ -398,7 +398,7 @@
     background-repeat: no-repeat;
     background-position: 44% 47%;
     background-size: 120px 120px;
-    background-image: url("../src/images/CalendarIcon.svg");
+    background-image: url("/public/images/CalendarIcon.svg");
 
     &::-webkit-calendar-picker-indicator {
       opacity: 0;

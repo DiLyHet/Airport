@@ -90,7 +90,7 @@ const Announcement: React.FC = () => {
             <div className="info-block__icon">
               <img
                 className="info-block__icon_img"
-                src="../src/images/PriorityLineImg.svg"
+                src="/images/PriorityLineImg.svg"
                 alt="priority"
               />
             </div>
@@ -106,7 +106,7 @@ const Announcement: React.FC = () => {
           <div className="quantity-selector">
             <div className="quantity-selector__item">
               <div className="quantity-selector__item_icon">
-                <img className="icon__adult" src="../src/images/AdultImg.jpg" alt="adult" />
+                <img className="icon__adult" src="/images/AdultImg.jpg" alt="adult" />
                 <span className="icon__text">Дорослі</span>
               </div>
               <span className="quantity-selector__counter_number">1</span>
@@ -114,7 +114,7 @@ const Announcement: React.FC = () => {
             </div>
             <div className="quantity-selector__item">
               <div className="quantity-selector__item_icon">
-                <img className="icon__child" src="../src/images/ChildImg.svg" alt="child" />
+                <img className="icon__child" src="/images/ChildImg.svg" alt="child" />
                 <span className="icon__text">Діти (2-12)</span>
               </div>
               <span className="quantity-selector__counter_number">0</span>
