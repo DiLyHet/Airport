@@ -880,7 +880,7 @@
 }
 .block__title_parking {
   border-radius: 0 0 150px 0;
-  background: url("../src/images/Parking.jpg");
+  background: url("/public/images/Parking.jpg");
 }
 @media screen and (min-width: 768px) and (max-width: 991.9px) {
   .block__title_parking {
@@ -894,7 +894,7 @@
 }
 .block__title_express-line {
   border-radius: 0 0 0 150px;
-  background: url("../src/images/ExpressLine.jpg");
+  background: url("/public/images/ExpressLine.jpg");
 }
 @media screen and (min-width: 768px) and (max-width: 991.9px) {
   .block__title_express-line {
@@ -908,7 +908,7 @@
 }
 .block__title_airlines-destinations {
   border-radius: 0 0 150px 0;
-  background: url("../src/images/AirlinesDestinations.jpg");
+  background: url("/public/images/AirlinesDestinations.jpg");
 }
 @media screen and (min-width: 768px) and (max-width: 991.9px) {
   .block__title_airlines-destinations {
@@ -922,7 +922,7 @@
 }
 .block__title_vip-terminal {
   border-radius: 0 0 0 150px;
-  background: url("../src/images/VipTerminal.jpg");
+  background: url("/public/images/VipTerminal.jpg");
 }
 @media screen and (min-width: 768px) and (max-width: 991.9px) {
   .block__title_vip-terminal {
@@ -1025,7 +1025,7 @@
 }
 .block__container_how-to-get {
   border-radius: 0 200px 0 0;
-  background: url("../src/images/HowToGet.jpg");
+  background: url("/public/images/HowToGet.jpg");
 }
 .block__container_how-to-get:hover {
   border-radius: 0 150px 0 0;
@@ -1071,7 +1071,7 @@
 }
 .block__container_buy-tickets {
   border-radius: 200px 0 0 0;
-  background: url("../src/images/BuyTickets.jpg");
+  background: url("/public/images/BuyTickets.jpg");
 }
 .block__container_buy-tickets:hover {
   border-radius: 150px 0 0 0;
@@ -1226,7 +1226,7 @@
 }
 .block__container_services {
   border-radius: 0 200px 0 0;
-  background: url("../src/images/Services.jpg");
+  background: url("/public/images/Services.jpg");
 }
 .block__container_services:hover {
   border-radius: 0 150px 0 0;
@@ -1272,7 +1272,7 @@
 }
 .block__container_covid-testing {
   border-radius: 200px 0 0 0;
-  background: url("../src/images/CovidTesting.jpeg");
+  background: url("/public/images/CovidTesting.jpeg");
 }
 .block__container_covid-testing:hover {
   border-radius: 150px 0 0 0;
@@ -1428,7 +1428,7 @@
 }
 .block__container_mastercard-fastline {
   border-radius: 0 200px 0 0;
-  background: url("../src/images/MastercardFastline.jpg");
+  background: url("/public/images/MastercardFastline.jpg");
 }
 .block__container_mastercard-fastline:hover {
   border-radius: 0 150px 0 0;
@@ -1474,7 +1474,7 @@
 }
 .block__container_information {
   border-radius: 200px 0 0 0;
-  background: url("../src/images/Information.jpg");
+  background: url("/public/images/Information.jpg");
 }
 .block__container_information:hover {
   border-radius: 150px 0 0 0;
@@ -1528,7 +1528,7 @@
   justify-content: space-between;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.38);
   width: 100vw;
-  background: url("../src/images/Main.jpg");
+  background: url("/public/images/Main.jpg");
 }
 @media screen and (min-width: 992px) and (max-width: 1199.9px) {
   .flight-search {
@@ -1903,7 +1903,7 @@
   background-repeat: no-repeat;
   background-position: 44% 47%;
   background-size: 120px 120px;
-  background-image: url("../src/images/CalendarIcon.svg");
+  background-image: url("/public/images/CalendarIcon.svg");
 }
 .filter__date-input::-webkit-calendar-picker-indicator {
   opacity: 0;

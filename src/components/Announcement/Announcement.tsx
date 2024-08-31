@@ -106,7 +106,7 @@ const Announcement: React.FC = () => {
           <div className="quantity-selector">
             <div className="quantity-selector__item">
               <div className="quantity-selector__item_icon">
-                <img className="icon__adult" src="/images/AdultImg.jpg" alt="adult" />
+                <img className="icon__adult" src="/images/AdultImg.svg" alt="adult" />
                 <span className="icon__text">Дорослі</span>
               </div>
               <span className="quantity-selector__counter_number">1</span>
